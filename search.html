@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        .search-container {
+            margin: 20px;
+        }
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search...">
+        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <div id="content">
+        <h2>Content to search</h2>
+        <p>This is a paragraph with some text to search through.</p>
+        <p>Another paragraph with different content.</p>
+        <p>This content will be indexed by our JavaScript search function.</p>
+    </div>
+
+    <script>
+        document.getElementById('searchBox').addEventListener('input', function() {
+            let searchQuery = this.value.toLowerCase();
+            let content = document.getElementById('content').innerText;
+            let searchResults = document.getElementById('searchResults');
+            let paragraphs = document.querySelectorAll('#content p');
+
+            searchResults.innerHTML = '';
+
+            paragraphs.forEach(paragraph => {
+                if (paragraph.innerText.toLowerCase().includes(searchQuery)) {
+                    let result = document.createElement('div');
+                    result.innerText = paragraph.innerText;
+                    searchResults.appendChild(result);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

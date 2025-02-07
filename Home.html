@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the title :) ">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            background-color: #4250ee;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+        }
+        #reportContainer {
+            width: 90%;
+            max-width: 1200px;
+            height: 500px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="searchBox" placeholder="Search..." onkeyup="performSearch()">
+    <ul id="searchResults"></ul>
+    <script src="search.js"></script>
+
+    <header>
+        <h1>Welcome!</h1>
+        <h2>Welcome to the Home Page. Please click on any link or search for a dashboard by relevant keywords.</h2>
+        <nav>
+            <ul>
+                <li><a href="Home.html" class="active">HomePage</a></li>
+                <li><a href="ESF.html">ESF</a></li>
+                <li><a href="Prism.html">Prism</a></li>
+                <li><a href="CorporateDashboard.html">CorporateDashboard</a></li>
+                <li><a href="Excel.html">Excel</a></li>
+                <li><a href="template.html">template</a></li>
+                
+      
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <p>Here is how you can reach us.</p>
+    </main>
+    <footer>
+    </footer>
+
+
+    
+</body>
+</html>

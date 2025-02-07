@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Home",
+        "url": "Home.html",
+        "description": "HomePage"
+    },
+    {
+        "title": "ESF Analytics",
+        "url": "ESF.html",
+        "description": "The Enterprise Sales Funnel Dashboard is designed for the user to investigate the interdependent relationship between Field Representatives and potential clients (leads) as they navigate through Northwestern Mutual's process of buying a product. From lead creation to sale of an NM Product, The dashboard allows the user to step between six discreet step; to investigate the client behavior, locate areas of improvement where clients may need an extra nudge, and help identify common characteristics of Field Rep's that make them successful."
+    },
+    {
+        "title": "Prism",
+        "url": "Prism.html",
+        "description": "A framework to centralize KPIs, metrics, and related information to facilitate access to performance information across the company.  As the content grows, it will become the starting point that connects people who need and those who have the information. This dashboard houses digital products insights work. "
+    },
+    {
+        "title": "Corporate Dashboard",
+        "url": "CorporateDashboard.html",
+        "description": "Communicate the organization’s performance for the Senior Leadership Team (SLT)."
+    },
+    {
+        "title": "Excel",
+        "url": "Excel.html",
+        "description": "Excel"
+    }
+]
